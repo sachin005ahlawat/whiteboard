@@ -1,4 +1,5 @@
-const socket = io.connect("http://localhost:3000");
+// depolying 
+const socket = io.connect("https://newboard.herokuapp.com/");
 const board = document.querySelector(".board");
 board.height = window.innerHeight;
 board.width = window.innerWidth;

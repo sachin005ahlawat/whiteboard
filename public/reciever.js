@@ -1,6 +1,6 @@
-let isemittedMouse=false;
+// let isemittedMouse=false;
 socket.on("mymousedown",function(point){
-    isemittedMouse=true;
+    // isemittedMouse=true;
     ctx.beginPath();
      x=point.x;
      y=point.y-board.getBoundingClientRect().y;
@@ -16,7 +16,7 @@ socket.on("mymousedown",function(point){
     // isMouseDown = true;
 })
 socket.on("mymousemove",function(point){
-    if (isemittedMouse == true) {
+    // if (isemittedMouse == true) {
         // console.log(ctx);
         let x=point.x;
         let y=point.y-board.getBoundingClientRect().y;
@@ -30,8 +30,8 @@ socket.on("mymousemove",function(point){
         //     type:"end"
         // }
         // undoStack.push(point);
-    }
+    // }
 })
-socket.on("mymouseup",function(point){
-    isemittedMouse = false;
-})
+// socket.on("mymouseup",function(point){
+//     isemittedMouse = false;
+// })

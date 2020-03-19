@@ -77,7 +77,7 @@ redo.addEventListener("mouseup",function(){
 
 function redraw(){
     ctx.clearRect(0,0,board.height,board.width);
-    ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
+    // ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
     for(var i=0;i<undoStack.length;i++){
         if(undoStack[i].type=="start"){
             ctx.lineWidth=undoStack[i].width;
