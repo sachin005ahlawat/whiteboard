@@ -35,7 +35,7 @@ board.addEventListener("mousemove", function (e) {
             type:"end"
         }
         undoStack.push(point);
-        socket.emit("mumousemove",point);
+        socket.emit("mymousemove",point);
     }
 
 })
